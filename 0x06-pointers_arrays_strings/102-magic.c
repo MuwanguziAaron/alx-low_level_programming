@@ -1,47 +1,25 @@
 #include <stdio.h>
 
-
-
 int main(void)
-
 {
-
 		int n;
+		int a[5];
+		int *p;
 
-			int a[5];
+		a[2] = 1024;
+		p = &n;
 
-				int *p;
+		               /**
+				* -you are not allowed to use a
+				* -you not allowed to modify p
+				* -only one statment
+				*  you not allowed to code anything else than this line of code
+				*  so it prints 98\n
+				*/  
+			
+				*(p + 5) = 98;
+				printf("a[2] = %d\n", a[2]);
 
-
-
-					a[2] = 1024;
-
-						p = &n;
-
-
-
-							/**
-							 *
-							 * 	 * - you are not allowed to use a
-							 *
-							 * 	 	 * - you are not allowed to modify p
-							 *
-							 * 	 	 	 * - only one statement
-							 *
-							 * 	 	 	 	 * - you are not allowed to code anything else than this line of code
-							 *
-							 * 	 	 	 	 	 * - so it prints 98\n
-							 *
-							 * 	 	 	 	 	 	 */
-
-
-
-							*(p + 5) = 98;
-
-								printf("a[2] = %d\n", a[2]);
-
-
-
-									return (0);
+				return (0);
 
 }
